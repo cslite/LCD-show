@@ -89,7 +89,7 @@ fi
 
 sudo cp ./waveshare32b-overlay.dtb /boot/firmware/overlays/waveshare32b.dtbo
 sudo cp ./waveshare32b-overlay.dtb /boot/firmware/overlays/
-#sudo cp -rf ./usr/share/X11/xorg.conf.d/99-fbturbo.conf  /usr/share/X11/xorg.conf.d/
+sudo cp -rf ./usr/share/X11/xorg.conf.d/99-fbturbo.conf  /usr/share/X11/xorg.conf.d/
 if [ -b /dev/mmcblk0p7 ]; then
 sudo cp ./cmdline.txt-noobs /boot/cmdline.txt
 else
