@@ -87,8 +87,8 @@ elif test "$1" = "270" -o "$2" = "270"; then
 	echo "LCD configure 270"
 fi
 
-sudo cp ./waveshare32b-overlay.dtb /boot/overlays/waveshare32b.dtbo
-sudo cp ./waveshare32b-overlay.dtb /boot/overlays/
+sudo cp ./waveshare32b-overlay.dtb /boot/firmware/overlays/waveshare32b.dtbo
+sudo cp ./waveshare32b-overlay.dtb /boot/firmware/overlays/
 #sudo cp -rf ./usr/share/X11/xorg.conf.d/99-fbturbo.conf  /usr/share/X11/xorg.conf.d/
 if [ -b /dev/mmcblk0p7 ]; then
 sudo cp ./cmdline.txt-noobs /boot/cmdline.txt
